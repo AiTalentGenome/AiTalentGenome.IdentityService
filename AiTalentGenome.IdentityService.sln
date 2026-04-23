@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiTalentGenome.IdentityService.Grpc", "AiTalentGenome.IdentityService.Grpc\AiTalentGenome.IdentityService.Grpc.csproj", "{CA1E8117-F08D-45DB-A8CC-28A968662591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiTalentGenome.IdentityService.Domain", "AiTalentGenome.IdentityService.Domain\AiTalentGenome.IdentityService.Domain.csproj", "{1EBE6206-D075-4CA0-94BD-E16D457C55F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiTalentGenome.IdentityService.Application", "AiTalentGenome.IdentityService.Application\AiTalentGenome.IdentityService.Application.csproj", "{4DDE1FEC-CD29-4ED5-A734-B22A6728A486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiTalentGenome.IdentityService.Infrastructure", "AiTalentGenome.IdentityService.Infrastructure\AiTalentGenome.IdentityService.Infrastructure.csproj", "{8FA20EE8-484A-406F-A07D-526BF01A61AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA1E8117-F08D-45DB-A8CC-28A968662591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1E8117-F08D-45DB-A8CC-28A968662591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1E8117-F08D-45DB-A8CC-28A968662591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1E8117-F08D-45DB-A8CC-28A968662591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EBE6206-D075-4CA0-94BD-E16D457C55F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EBE6206-D075-4CA0-94BD-E16D457C55F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EBE6206-D075-4CA0-94BD-E16D457C55F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EBE6206-D075-4CA0-94BD-E16D457C55F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDE1FEC-CD29-4ED5-A734-B22A6728A486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDE1FEC-CD29-4ED5-A734-B22A6728A486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDE1FEC-CD29-4ED5-A734-B22A6728A486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDE1FEC-CD29-4ED5-A734-B22A6728A486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA20EE8-484A-406F-A07D-526BF01A61AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA20EE8-484A-406F-A07D-526BF01A61AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA20EE8-484A-406F-A07D-526BF01A61AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA20EE8-484A-406F-A07D-526BF01A61AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
