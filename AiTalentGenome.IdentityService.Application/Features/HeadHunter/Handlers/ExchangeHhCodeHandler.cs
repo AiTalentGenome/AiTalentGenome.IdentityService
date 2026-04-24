@@ -74,6 +74,14 @@ public class ExchangeHhCodeHandler(
         // 5. Финальное сохранение
         await unitOfWork.SaveChangesAsync(ct);
 
-        return new AuthResult(user.Id, accessToken, company.IsActive);
+        return new AuthResult(
+            user.Id, 
+            accessToken, 
+            company.IsActive,
+            user.Email,
+            user.FirstName,
+            user.LastName,
+            company.Name
+        );
     }
 }

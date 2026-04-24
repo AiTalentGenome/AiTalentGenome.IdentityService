@@ -16,17 +16,11 @@ public class IdentityGrpcService(IMediator mediator) : Contracts.Identity.Identi
         ExchangeHhCodeRequest request, 
         ServerCallContext context)
     {
-        // 1. Отправляем команду в Application слой через MediatR
         var result = await _mediator.Send(new ExchangeHhCodeCommand(request.Code));
 
-        // 2. Маппинг результата в gRPC ответ
         if (!result.IsActive)
         {
-            return new AuthResponse
-            {
-                IsActive = false,
-                ErrorMessage = result.ErrorMessage ?? "Доступ заблокирован или ошибка авторизации"
-            };
+            return new AuthResponse { IsActive = false, ErrorMessage = result.ErrorMessage };
         }
 
         return new AuthResponse
@@ -35,9 +29,12 @@ public class IdentityGrpcService(IMediator mediator) : Contracts.Identity.Identi
             IsActive = true,
             User = new UserResponse
             {
-                Id = result.UserId, // Наш long ID
+                Id = result.UserId,
+                Email = result.Email,
+                FirstName = result.FirstName,
+                LastName = result.LastName,
+                CompanyName = result.CompanyName,
                 IsActive = true
-                // Остальные данные можно подтянуть, если расширить AuthResult
             }
         };
     }
